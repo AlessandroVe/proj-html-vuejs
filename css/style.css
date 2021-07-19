@@ -1,0 +1,15 @@
+/* top-bar */
+.logo-store{
+    border: 1px solid black;
+    flex-basis:204px ;
+    flex-shrink: 0;
+}
+.logo-store img{
+    height: 70px;
+}
+.search-products{
+    width:100%;
+}
+.search-products input{
+    width: 100%;
+}
