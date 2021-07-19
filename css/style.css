@@ -1,6 +1,5 @@
 /* top-bar */
 .logo-store{
-    border: 1px solid black;
     flex-basis:204px ;
     flex-shrink: 0;
 }
@@ -8,8 +7,21 @@
     height: 70px;
 }
 .search-products{
-    width:100%;
+    
 }
 .search-products input{
     width: 100%;
+}
+.contact-us .contact-us-specs div:first-of-type{
+    font-size: 12px;
+    font-weight: bold;
+}
+.contact-us .headphones-logo i {
+    font-size: 45px;
+    color: rgb(134, 194, 74);
+    margin-right: 10px;
+}
+.phone-number{
+    color: rgb(134, 194, 74);
+    font-size: 20px;
 }
