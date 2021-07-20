@@ -108,3 +108,11 @@ nav .vertical-nav{
     font-size: 15px;
     font-weight: bold;
 }
+#top-bar>nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* top-bar - NAV :HOVER*/
+#top-bar>nav ul li:hover a , #top-bar>nav ul li:hover i  {
+    color: rgb(142, 143, 68);
+}
