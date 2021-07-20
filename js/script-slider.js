@@ -1,7 +1,7 @@
 var app = new Vue({
     el: '#jumbo-slide',
     data:{
-      imgArray:[
+      imgArray:[/* mi serve un array di immmagini  dove poter ciclare  */
         "",
         "",
 
