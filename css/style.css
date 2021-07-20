@@ -1,4 +1,13 @@
 /* top-bar */
+#top-bar{
+    padding: 30px 0 ;
+}
+.top-bar-container ul {
+    list-style: none;
+}
+.ul-left{
+    flex-basis: 600px;
+}
 .logo-store{
     flex-basis:204px ;
     flex-shrink: 0;
@@ -7,10 +16,31 @@
     height: 70px;
 }
 .search-products{
-    
+    flex-grow: 1;
+    position: relative;
 }
 .search-products input{
     width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    background-color: rgb(233, 232, 232);
+    border:none;
+    border-radius: 50px;
+}
+.search-products button{
+    height: 100%;
+    min-width: 90px;
+    border:none;
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    background: 0 0;
+}
+.contact-us{
+    margin:0 60px ;
 }
 .contact-us .contact-us-specs div:first-of-type{
     font-size: 12px;
@@ -21,7 +51,60 @@
     color: rgb(134, 194, 74);
     margin-right: 10px;
 }
-.phone-number{
+.contact-us .phone-number{
     color: rgb(134, 194, 74);
     font-size: 20px;
+}
+.user-interact>div {
+    transition: all .5s ease 0s;
+    position: relative;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+}
+.user-interact>div i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.user-interact>div.profile{
+    background-color:rgb(196, 241, 241) ;
+}
+.user-interact>div.liked{
+    background-color:rgb(248, 250, 217) ;
+}
+.user-interact>div.shopping-cart{
+    background-color:rgb(250, 217, 217) ;
+}
+/* top-bar :HOVER*/
+.user-interact>div:hover{
+    background-color: rgb(67, 98, 36);
+}
+/* top-bar - NAV */
+#top-bar>nav{
+    padding: 5px 0 ;
+    height: 65px;
+    background-color:#124e29 ;
+}
+nav .vertical-nav{
+    height: 55px;
+    width: 300px ;
+    line-height: 55px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(142, 143, 68);
+    border-radius: 55px;
+}
+#top-bar>nav ul {
+    margin: 0;
+    list-style: none;
+}
+#top-bar>nav ul li {
+    line-height: 50px;
+    margin: 0px 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
