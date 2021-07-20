@@ -1,6 +1,11 @@
 var app = new Vue({
-    el: '#container-master',
+    el: '#jumbo-slide',
     data:{
+      imgArray:[
+        "",
+        "",
+
+      ],
         
 
     },
