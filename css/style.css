@@ -179,30 +179,36 @@ nav .vertical-nav{
 /* discover-ban */
 #discover-ban .col-4{
     height: 300px;
-    padding: 15px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
 }
-#discover-ban .col-4 div{
+#discover-ban .col-4>div{
     width: 100%;
     height: 100%;
     padding: 30px;
+    transition: all .2s linear 0s;
+    transform: scale(1.2);
+    border-radius:5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#discover-ban .col-4:hover div{
+    transform: scale(1);
+    filter: brightness(85%);
 }
 #banner-1>div{
     background-image: url(../img/h1-banner-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 #banner-2>div{
     background-image: url(../img/h1-banner-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 #banner-3>div{
     background-image: url(../img/h1-banner-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 /* container-item */
 .container-item{

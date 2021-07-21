@@ -112,7 +112,7 @@ new Vue({
         ],
     },
     created: function () {
-       console.log(this.ArrayOfNewItem)
+       
     },
     methods:{
         AddToWishList:function(elementoOfArray){
