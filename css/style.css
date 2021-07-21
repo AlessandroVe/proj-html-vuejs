@@ -185,6 +185,16 @@ nav .vertical-nav{
     width: 100%;
     height: 100%;
 }
+/* container-item */
+.container-item .cover{
+    padding: 15px;
+}
+.container-item .cover img{
+    width: 100%;
+}
+.container-item .item{
+    text-align: center;
+}
 /* new-item-shop */
 #new-item-shop{
     background-color: white;

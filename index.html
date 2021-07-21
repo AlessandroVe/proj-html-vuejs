@@ -100,8 +100,25 @@
                     <h1>Shop New</h1>
                     <hr>
                 </div>
-                <div class="">
+                <div class="col-12 row">
+                    <div v-for="item in ArrayOfNewItem" class="col-3 item">
+                        <div class="cover">
+                            <img :src="'./img/'+ item.image" alt="">
+                        </div>
+                        <div>
+                            {{item.rate}}/5
 
+                        </div>
+                        <div>
+                            {{item.name}}
+
+                        </div>
+                        <div>
+                            {{item.cost}}$
+
+                        </div>
+
+                    </div>
                 </div>
               
             </div>
@@ -110,6 +127,6 @@
 
 
     </div>
-
+    <script src="./js/data-management.js"></script>
 </body>
 </html>
