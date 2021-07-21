@@ -38,6 +38,18 @@ new Vue({
         clearInterval(this.intervalSlot);
         this.timer();
       },
+      selectImg:function(index){
+        this.pictureIndex = index
+        clearInterval(this.intervalSlot);
+        this.timer();
+      },
+      isCurrentImage:function(index){
+        if(index === this.pictureIndex){
+            return "current"
+        }else{
+            return ""
+        }
+      },
 
     },
   })

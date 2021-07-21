@@ -1,6 +1,6 @@
 /* top-bar */
 #top-bar{
-    padding: 30px 0 ;
+    padding-top: 30px;
 }
 .top-bar-container ul {
     list-style: none;
@@ -119,11 +119,9 @@ nav .vertical-nav{
 /* jumbo-slide */
 .slider{
     position: relative;
+    height: 55vw;
 }
-.slider{
-    height: 830px;
-}
-.slider>div{
+.slider div{
     height: 100%;
 }
 .slider img{
@@ -132,16 +130,28 @@ nav .vertical-nav{
 }
 .arrow{
     color: white;
-    font-size: 50px;
+    font-size: 45px;
 }
 .arrow.left{
     position: absolute;
     top: 50%;
+    transform: translate(5px,-50%);
 
 }
 .arrow.right{
     z-index: 1005;
     position: absolute;
     top: 50%;
-    right: 11px;
+    right: 0px;
+    transform: translate(0,-50%);
+}
+.nav-img>div{
+    transition: all .5s ease 0s;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: rgba(108, 119, 108, 0.5);
+} 
+.nav-img>div:hover{
+    background-color: rgba(108, 119, 108, 0.5);
 }

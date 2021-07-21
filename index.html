@@ -60,26 +60,20 @@
                 </div>
             </nav>
         </div>
-        <div class="container-fluid" id="jumbo-slide">
-            <div class="row slider">
+        <div  id="jumbo-slide">
+            <div class=" slider">
 
                 <span><i @click="prev"class="fas fa-arrow-circle-left arrow left"></i> </span>
-                <div class="col-12">
+                <div>
                      <img :src="'./img/'+ imgArray[pictureIndex]" alt="img-slider">
                 </div>
                 <span><i @click="next" class="fas fa-arrow-circle-right arrow right"></i>  </span>
            
             </div>
-            <div class="container nav-img ">
-                <div class="row">
-    
-                    <div v-for="(immagine, index) in imgArray"class="col-3 ">
-                        <div>
-                        ciao
-                        </div>
+            <div class="d-flex nav-img ">
+                    <div v-for="(immagine, index) in imgArray":class="isCurrentImage(index)" @click="selectImg(index)" >
+                        
                     </div>
-                </div>
-    
             </div>
         </div>
         <script src="./js/script-slider.js"></script>
