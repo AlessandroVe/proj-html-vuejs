@@ -182,9 +182,27 @@ nav .vertical-nav{
     padding: 15px;
 }
 #discover-ban .col-4 div{
-    background-color: violet;
     width: 100%;
     height: 100%;
+    padding: 30px;
+}
+#banner-1>div{
+    background-image: url(../img/h1-banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#banner-2>div{
+    background-image: url(../img/h1-banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#banner-3>div{
+    background-image: url(../img/h1-banner-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /* container-item */
 .container-item{
