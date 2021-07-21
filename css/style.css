@@ -3,8 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(252, 239, 224)
+}
 /* top-bar */
 #top-bar{
+    background-color: white;
     padding-top: 30px;
 }
 .top-bar-container ul {
@@ -170,5 +174,18 @@ nav .vertical-nav{
 .nav-img>div.current{
     background-color: rgba(28, 13, 240, 0.5);
     border: 2px solid white;
-
+}
+/* discover-ban */
+#discover-ban .col-4{
+    height: 300px;
+    padding: 15px;
+}
+#discover-ban .col-4 div{
+    background-color: violet;
+    width: 100%;
+    height: 100%;
+}
+/* new-item-shop */
+#new-item-shop{
+    background-color: white;
 }
