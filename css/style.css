@@ -186,6 +186,9 @@ nav .vertical-nav{
     height: 100%;
 }
 /* container-item */
+.container-item{
+    background-color: white;
+}
 .container-item .cover{
     padding: 15px;
 }
@@ -196,6 +199,3 @@ nav .vertical-nav{
     text-align: center;
 }
 /* new-item-shop */
-#new-item-shop{
-    background-color: white;
-}

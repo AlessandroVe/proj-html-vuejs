@@ -116,12 +116,143 @@
                             {{item.cost}}$
                             
                         </div>
+                        <button @click="AddToWishList(item)">Do you like?</button>
                         
                     </div>
                 </div>
                 
             </div>
         </div>
+        <br>
+        <div class="container container-item" id="DiscountedProducts" >
+            <div class="row">
+                <div class="col-12" >
+                    <h1>Shop Sales</h1>
+                    <hr>
+                </div>
+                <div class="col-12 row">
+                    <div v-for="item in ArrayOfDiscountedProducts" class="col-3 item">
+                        <div class="cover">
+                            <img :src="'./img/'+ item.image" alt="">
+                        </div>
+                        <div>
+                            {{item.rate}}/5
+                            
+                        </div>
+                        <div>
+                            {{item.name}}
+                            
+                        </div>
+                        <div>
+                            {{item.cost}}$
+                            
+                        </div>
+                        <button @click="AddToWishList(item)">Do you like?</button>
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="container container-item" id="PopularItem" >
+            <div class="row">
+                <div class="col-12" >
+                    <h1> Shop Popular</h1>
+                    <hr>
+                </div>
+                <div class="col-12 row">
+                    <div v-for="item in ArrayOfPopularItem" class="col-3 item">
+                        <div class="cover">
+                            <img :src="'./img/'+ item.image" alt="">
+                        </div>
+                        <div>
+                            {{item.rate}}/5
+                            
+                        </div>
+                        <div>
+                            {{item.name}}
+                            
+                        </div>
+                        <div>
+                            {{item.cost}}$
+                            
+                        </div>
+                        <button @click="AddToWishList(item)">Do you like?</button>
+
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="container container-item" id="TopRated" >
+            <div class="row">
+                <div class="col-12" >
+                    <h1>Top Rated</h1>
+                    <hr>
+                </div>
+                <div class="col-12 row">
+                    <div v-for="item in ArrayOfTopRatedItem" class="col-3 item">
+                        <div class="cover">
+                            <img :src="'./img/'+ item.image" alt="">
+                        </div>
+                        <div>
+                            {{item.rate}}/5
+                            
+                        </div>
+                        <div>
+                            {{item.name}}
+                            
+                        </div>
+                        <div>
+                            {{item.cost}}$
+                            
+                        </div>
+                        <button @click="AddToWishList(item)">Do you like?</button>
+
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <br>
+        <div class="container container-item" id="WishList" >
+            <div class="row">
+                <div class="col-12" >
+                    <h1>Wish LIst</h1>
+                    <hr>
+                </div>
+                <div class="col-12 row">
+                    <div v-for="item in ArrayWishList" class="col-3 item">
+                        <div class="cover">
+                            <img :src="'./img/'+ item.image" alt="">
+                        </div>
+                        <div>
+                            {{item.rate}}/5
+                            
+                        </div>
+                        <div>
+                            {{item.name}}
+                            
+                        </div>
+                        <div>
+                            {{item.cost}}$
+                            
+                        </div>
+                        <button @click="RemoveToWishList()">Don't you like ?</button>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+            
         
         
         
