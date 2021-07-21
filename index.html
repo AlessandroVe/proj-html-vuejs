@@ -63,12 +63,23 @@
         <div class="container-fluid" id="jumbo-slide">
             <div class="row slider">
 
-                <div class="col-2 arrow" ><i @click="prev" class="fas fa-arrow-circle-left left"></i> </div>
-                <div  class="col-8">
+                <span><i @click="prev"class="fas fa-arrow-circle-left arrow left"></i> </span>
+                <div class="col-12">
                      <img :src="'./img/'+ imgArray[pictureIndex]" alt="img-slider">
                 </div>
-                <div class="col-2 arrow" ><i @click="next" class="fas fa-arrow-circle-right right"></i>  </div>
+                <span><i @click="next" class="fas fa-arrow-circle-right arrow right"></i>  </span>
            
+            </div>
+            <div class="container nav-img ">
+                <div class="row">
+    
+                    <div v-for="(immagine, index) in imgArray"class="col-3 ">
+                        <div>
+                        ciao
+                        </div>
+                    </div>
+                </div>
+    
             </div>
         </div>
         <script src="./js/script-slider.js"></script>

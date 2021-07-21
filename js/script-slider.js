@@ -10,13 +10,14 @@ new Vue({
 
     },
     created: function () {
+      this.timer()
        
     },
     methods:{
       timer:function(){/* dopo ogni tot si deve avviare  la funzione snext() */
         this.intervalSlot = setInterval(() => {
             this.next();
-        }, 3000);
+        }, 5000);
 
       },
       next : function(){/* mi serve una funzione che aumenti di 1 il pictureIndex , pero' quando arriva al massimo all'index corrispondente all'ultimo item il contatore torna a zero */
