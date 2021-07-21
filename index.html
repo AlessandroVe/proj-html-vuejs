@@ -68,12 +68,13 @@
                      <img :src="'./img/'+ imgArray[pictureIndex]" alt="img-slider">
                 </div>
                 <span><i @click="next" class="fas fa-arrow-circle-right arrow right"></i>  </span>
-           
-            </div>
-            <div class="d-flex nav-img ">
-                    <div v-for="(immagine, index) in imgArray":class="isCurrentImage(index)" @click="selectImg(index)" >
-                        
-                    </div>
+
+                
+                <div class="d-flex nav-img ">
+                        <div v-for="(immagine, index) in imgArray":class="isCurrentImage(index)" @click="selectImg(index)" >
+                            
+                        </div>
+                </div>
             </div>
         </div>
         <script src="./js/script-slider.js"></script>

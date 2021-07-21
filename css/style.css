@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 /* top-bar */
 #top-bar{
     padding-top: 30px;
@@ -145,13 +150,25 @@ nav .vertical-nav{
     right: 0px;
     transform: translate(0,-50%);
 }
+.nav-img{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,0);
+}
 .nav-img>div{
-    transition: all .5s ease 0s;
+    transition: all .2s linear 0s;
     height: 20px;
     width: 20px;
     border-radius: 20px;
-    background-color: rgba(108, 119, 108, 0.5);
+    background-color: rgba(10, 10, 10, 0.5);
 } 
 .nav-img>div:hover{
-    background-color: rgba(108, 119, 108, 0.5);
+    background-color: rgba(28, 13, 240, 0.5);
+    border: 2px solid white;
+}
+.nav-img>div.current{
+    background-color: rgba(28, 13, 240, 0.5);
+    border: 2px solid white;
+
 }
