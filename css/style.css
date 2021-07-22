@@ -217,6 +217,7 @@ nav .vertical-nav{
 /* container-item */
 .container-item{
     background-color: white;
+    border-radius: 10px;
 }
 .container-item .cover{
     padding: 15px;
