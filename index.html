@@ -17,20 +17,23 @@
     <div id="container-master">
         <div id="top-bar">
             <div class="container">
-                <div class="d-flex  justify-content-between top-bar-container">
+                <div class="d-flex justify-content-around justify-content-lg-between top-bar-container">
+                    <div class="d-flex d-lg-none  align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <ul class="d-flex align-items-center ul-left">
                         <li class="logo-store">
                             <img src="./img/logo.svg" alt="logo">
                         </li>
-                        <li class="search-products " >
+                        <li class="d-none d-lg-flex search-products " >
                             <input placeholder="Search products..." type="text">
                             <button>Search</button>
                             <!-- ? -->
                         </li>
         
                     </ul>
-                    <ul  class="d-flex align-items-center">
-                        <li class="d-flex contact-us">
+                    <ul class="d-flex align-items-center">
+                        <li class="d-none d-lg-flex contact-us">
                             <div class="headphones-logo"><i class="fas fa-headphones-alt"></i></div>
                             <div class="contact-us-specs">
                                 <div>CALL US 24/7</div>
@@ -38,15 +41,15 @@
                             </div>
                         </li>
                         <li class="d-flex user-interact">
-                           <div class="profile"><i class="far fa-user"></i></div> 
-                           <div class="liked"><i class="far fa-heart"></i></div> 
+                           <div class="d-none d-lg-flex profile"><i class="far fa-user"></i></div> 
+                           <div class="d-none d-lg-flex liked"><i class="far fa-heart"></i></div> 
                            <div class="shopping-cart"><i class="fas fa-shopping-cart"></i></div> 
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <nav>
+            <nav class="d-none d-lg-flex">
                 <div class="container d-flex ">
                     <div class="vertical-nav">
                         <i class="fas fa-bars"></i>
@@ -80,9 +83,9 @@
             </div>
         </div>
         <div class="container" id="discover-ban" >
-            <div class="py-4 row">
+            <div class="p-lg-4 row">
                 
-                <div class="col-4 px-5" id="banner-1" >
+                <div class="col-12 col-lg-4 m-4 m-lg-0 px-5" id="banner-1" >
                     <div class="d-flex flex-column justify-content-center">
                         <p>
                             Discover <br> Real Organic <br> Flavors
@@ -92,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="col-4  px-5" id="banner-2">
+                <div class="col-12 col-lg-4 m-4 m-lg-0 px-5" id="banner-2">
                     <div class="d-flex flex-column justify-content-center">
                         <p class="text-white">
                             Best Honey <br> with Premium <br> Quality
@@ -103,7 +106,7 @@
                     
                 </div>
 
-                <div class="col-4  px-5" id="banner-3">
+                <div class="col-12 col-lg-4 m-4 m-lg-0 px-5" id="banner-3">
                     <div class="d-flex flex-column justify-content-center">
                         <p class="text-white">
                             Detox with <br> Green Vegetables  <br> and Fruits
@@ -123,7 +126,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayOfNewItem" class="col-3 item">
+                    <div v-for="item in ArrayOfNewItem" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -153,7 +156,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayOfDiscountedProducts" class="col-3 item">
+                    <div v-for="item in ArrayOfDiscountedProducts" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -184,7 +187,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayOfPopularItem" class="col-3 item">
+                    <div v-for="item in ArrayOfPopularItem" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -215,7 +218,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayOfTopRatedItem" class="col-3 item">
+                    <div v-for="item in ArrayOfTopRatedItem" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -247,7 +250,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayWishList" class="col-3 item">
+                    <div v-for="item in ArrayWishList" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -276,7 +279,7 @@
         
         
     </div>
-    <script src="./js/script-slider.js"></script>
+    <!-- <script src="./js/script-slider.js"></script> -->
     <script src="./js/data-management.js"></script>
 </body>
 </html>

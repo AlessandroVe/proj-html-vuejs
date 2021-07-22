@@ -177,13 +177,13 @@ nav .vertical-nav{
     border: 2px solid white;
 }
 /* discover-ban */
-#discover-ban .col-4{
+#discover-ban .col-lg-4{
     height: 300px;
     overflow-y: hidden;
     overflow-x: hidden;
     border-radius:5px;
 }
-#discover-ban .col-4>div{
+#discover-ban .col-lg-4>div{
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -195,11 +195,11 @@ nav .vertical-nav{
     background-position: center;
 
 }
-#discover-ban .col-4:hover div{
+#discover-ban .col-lg-4:hover div{
     transform: scale(1);
     filter: brightness(85%);
 }
-#discover-ban .col-4 p{
+#discover-ban .col-lg-4 p{
     font-size: 25px;
 }
 #banner-1>div{
