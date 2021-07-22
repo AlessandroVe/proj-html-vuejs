@@ -181,7 +181,7 @@ nav .vertical-nav{
     height: 300px;
     overflow-y: hidden;
     overflow-x: hidden;
-    
+    border-radius:5px;
 }
 #discover-ban .col-4>div{
     width: 100%;
@@ -193,10 +193,14 @@ nav .vertical-nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 #discover-ban .col-4:hover div{
     transform: scale(1);
     filter: brightness(85%);
+}
+#discover-ban .col-4 p{
+    font-size: 25px;
 }
 #banner-1>div{
     background-image: url(../img/h1-banner-1.jpg);
