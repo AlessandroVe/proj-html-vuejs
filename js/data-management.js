@@ -130,7 +130,7 @@ new Vue({
             }
         },
         RemoveToWishList:function(indexOfElement){
-            this.ArrayWishList.splice(indexOfElement,1)
+            this.ArrayWishList.splice(indexOfElement,1);
         },
 
         

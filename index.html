@@ -75,9 +75,9 @@
 
 
                 <div class="d-flex nav-img ">
-                        <div v-for="(immagine, index) in imgArray":class="isCurrentImage(index)" @click="selectImg(index)" >
+                        <div v-for="(immagine, index) in imgArray":class="isCurrentImage(index)" @click="selectImg(index)" ></div>
                             
-                        </div>
+                        
                 </div>
             </div>
         </div>
@@ -249,7 +249,7 @@
                     <hr>
                 </div>
                 <div class="col-12 row">
-                    <div v-for="item in ArrayWishList" class="col-6 col-md-3 item">
+                    <div v-for="(item,index) in ArrayWishList" class="col-6 col-md-3 item">
                         <div class="cover">
                             <img :src="'./img/'+ item.image" alt="">
                         </div>
@@ -265,7 +265,7 @@
                             {{item.cost}}$
                             
                         </div>
-                        <button @click="RemoveToWishList()">Don't you like ?</button>
+                        <button @click="RemoveToWishList(index)">Don't you like ?</button>
                         
                     </div>
                 </div>
